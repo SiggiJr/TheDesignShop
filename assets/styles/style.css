@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Karla";
+  src: url("../font/Karla/Karla-Italic-VariableFont_wght.ttf");
+}
+
+/* # === Global Settings === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main_font: "Karla";
+}
+
+body {
+  font-family: var(--main_font);
+  padding: 0 40px;
+}
+
+/* # === Header === */
