@@ -26,7 +26,7 @@ body {
 /* # === Header === */
 
 .header_container {
-  padding: 40px;
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,6 +144,12 @@ img:hover {
 }
 
 /* # === MEDIA-QUERRYS === */
+
+@media (max-width: 1320px) {
+  .three_products {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media (max-width: 768px) {
   .footer_container {
