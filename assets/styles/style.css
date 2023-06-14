@@ -13,6 +13,9 @@
 
 :root {
   --main_font: "Karla";
+  --head_color: #323a45;
+  --color_gray: #848484;
+  --color_black: #000;
 }
 
 body {
@@ -21,3 +24,68 @@ body {
 }
 
 /* # === Header === */
+
+.header_container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.header_container h1 {
+  font-size: 1.25rem;
+}
+
+.header_container a {
+  color: var(--head_color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header_container ul {
+  display: flex;
+  list-style: none;
+  column-gap: 60px;
+  font-size: 0.625rem;
+}
+
+/* # === MAIN === */
+
+.main_container > * {
+  padding-bottom: 60px;
+}
+
+.name,
+.company,
+.price {
+  font-size: 0.9375rem;
+}
+
+.name a {
+  color: var(--color_black);
+  text-decoration: none;
+}
+
+.company {
+  color: var(--color_gray);
+  padding-top: 5px;
+}
+
+.picture img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 23px;
+}
+
+.six_products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+  gap: 40px 20px;
+}
